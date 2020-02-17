@@ -67,6 +67,25 @@ var donut ={
 }; 
 
 
+//Lvl 2 Food items 
+
+
+//Chicken Sandwich 
+
+//Salad 
+
+//Coffee 
+
+
+//Lvl 3 Food Items
+
+//Grilled Veggies 
+
+//BBQ Ribs 
+
+
+
+
 
 
 
