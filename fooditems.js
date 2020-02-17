@@ -12,20 +12,7 @@
     isPattieCooked(){
     if(onSkillet == true)
     {
-        /*function timer(){
-            var sec = 15; 
-            var timer = setInterval(function() 
-            {
-                sec --;
-                if (sec == 0)  
-                {
-
-                     clearInterval(timer); 
-                     removePattie(); 
-                }
-
-            }
-        }*/
+        cookingtime();
       
         color = 'brown' ; //represents the pattie is cooked
         isCooked = true;
