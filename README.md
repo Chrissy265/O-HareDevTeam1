@@ -1,2 +1,5 @@
 # O-HareDevTeam1
-Creating a game for Chicago O'Hare Airport 
+Game Name: Chief O'Hare 
+JS framework Phaser 3 
+
+
