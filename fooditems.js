@@ -129,8 +129,7 @@ var Skillet = {
 
     isCooked : false, 
      onBun :false,
-
-  
+     time =10,
      }, 
 
 
@@ -162,8 +161,22 @@ removeFooditem()
 
 placeFooditem()
 {
-    //place food item on the kitchen tool 
+    //place food item on the kitchen tool
 }
 
+cookingtime()
+{
+     var timeleft = 10,
+
+     var cooktime = setInterval(function(){
+         if(timeleft <=0){
+             clearInterval(cooktime);
+         }
+        document.getElementById("progressBar").value = 10 -timeleft;
+         timeleft -=1;
+            
+    
+}, 1000);
 
 
+}
