@@ -15,7 +15,7 @@ var config = {
 var game = new Phaser.Game(config);
 
 function preload(){
-    this.load.multiatlas('kitchenscene',)
+    //load the food items 
 }
 
 window.onload = function(){
@@ -162,6 +162,7 @@ removeFooditem()
 placeFooditem()
 {
     //place food item on the kitchen tool
+
 }
 
 cookingtime()
@@ -177,6 +178,18 @@ cookingtime()
             
     
 }, 1000);
+} //end of create function 
 
+function update()
+{
+         //User input touchscreen
+pointer1: {
 
+    get: function ()
+    {
+        return this.manager.pointers[1];
+    }
 }
+
+},
+
