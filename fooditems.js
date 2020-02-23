@@ -15,12 +15,13 @@ var config = {
 var game = new Phaser.Game(config);
 
 function preload(){
-    //load the food items 
+    this.load.multiatlas('kitchenscene', 'assets/kitchen.json', 'assets');  
 }
 
 window.onload = function(){
 
     scene: [bootGame, playGame]
+    //this.onload.image('kitchen', 'assets/kitchenscene.json/trail1.jpg', 'assets');
 }
 
 class bootGame extends Phaser.Scene{
@@ -32,8 +33,65 @@ class bootGame extends Phaser.Scene{
 
     }
 }
+
+
+
 function create(){
-//Create Each Food item with timer functionality 
+
+var background = this.add.sprite(0,0, 'cityscene','kitchenscene.png');
+
+//Creating the touch inputs up to four fingers
+
+graphics= this.add.graphics(); // insert the kitchen scene
+
+//1 pointer by default 
+this.input.addPointer(3);
+
+
+//Enable Dragged 
+
+//insert the food items images
+var image = this.add.sprite().setInteractive();
+
+image.on('pointover', function (){
+    this.setTint(0x00ff0);
+});
+
+image.on('pointerout', function () {
+
+    this.clearTint();
+});
+
+this.input.setDraggable(image);
+
+this.input.on('dragstart', function (pointer, gameObject) {
+
+    gameObject.setTint(0xff0000); 
+}); 
+
+this.input.on('drag', function (pointer, gameObject, dragX, dragY){
+
+    gameObject.x = dragX;
+    gameObject.y = dragY; 
+}); 
+
+
+this.input.on('dragend', function (pointer, gameObject) {
+
+     gameObject.clearTint();
+
+});
+
+}
+
+
+
+
+
+
+
+
+//Fooditem
 
 //Hamburger 
  var  Hamburger = {
@@ -120,7 +178,7 @@ var bbqRibs = {
 };
 
 
-}
+
 
 
 //Kitchen Tools 
@@ -183,13 +241,17 @@ cookingtime()
 function update()
 {
          //User input touchscreen
-pointer1: {
-
-    get: function ()
-    {
-        return this.manager.pointers[1];
-    }
+if(this.input.pointer1.isDown || this.input.pointer2.isDown || this.input.pointer3.isDown || this.input.pointer4.isDown)
+{
+    graphics.clear();
 }
 
-},
+//execute the action of moving the kitchen objects 
+
+
+}
+
+
+
+
 
