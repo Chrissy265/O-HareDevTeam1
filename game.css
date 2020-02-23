@@ -1,0 +1,14 @@
+#character {
+	position: absolute;
+	background: url(character.jpg) no-repeat;
+	width: 200px;
+	height: 150px;
+	border: 1px solid red;
+}
+
+#game {
+	position: relative;
+	border: 1px solid black;
+	height: 300px;
+	width: 400px;
+}
