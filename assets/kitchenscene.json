@@ -1,0 +1,41 @@
+{
+	"textures": [
+		{
+			"image": "kitchenscene.png",
+			"format": "RGBA8888",
+			"size": {
+				"w": 964,
+				"h": 722
+			},
+			"scale": 1,
+			"frames": [
+				{
+					"filename": "kitchen.jpg",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 962,
+						"h": 720
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 962,
+						"h": 720
+					},
+					"frame": {
+						"x": 1,
+						"y": 1,
+						"w": 962,
+						"h": 720
+					}
+				}
+			]
+		}
+	],
+	"meta": {
+		"app": "https://www.codeandweb.com/texturepacker",
+		"version": "3.0",
+		"smartupdate": "$TexturePacker:SmartUpdate:a01aeabc1d2d6f98bc2e4cc79a2ffc5b:85c4350031fd9c27b843833cd902b72a:2516f5b925ba7e43ff40cf578263834d$"
+	}
+}
