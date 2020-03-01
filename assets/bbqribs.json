@@ -1,0 +1,41 @@
+{
+	"textures": [
+		{
+			"image": "bbqribs.png",
+			"format": "RGBA8888",
+			"size": {
+				"w": 256,
+				"h": 200
+			},
+			"scale": 1,
+			"frames": [
+				{
+					"filename": "salad.jpg",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 254,
+						"h": 198
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 254,
+						"h": 198
+					},
+					"frame": {
+						"x": 1,
+						"y": 1,
+						"w": 254,
+						"h": 198
+					}
+				}
+			]
+		}
+	],
+	"meta": {
+		"app": "https://www.codeandweb.com/texturepacker",
+		"version": "3.0",
+		"smartupdate": "$TexturePacker:SmartUpdate:9d4703b22d70848edf1ccc7ecc663e69:646f08bf6fc6f770aeb5cb5fc9806d1d:e60b516540bdb4743a57413213cfda2e$"
+	}
+}
